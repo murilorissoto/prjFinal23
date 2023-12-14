@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTav4TRuO6uc3h7Au9DTJMG7eRh-A6fHhIihapSBqEweq2AkYfXDFYiooy2YU4buxEoNJ4&usqp=CAU">
+<body>
+    <h1>Cadastro de Jogos</h1>
+    <div id="cadastro">
+        <h2>Cadastro de Jogo</h2>
+       <center> <form id="cadastroForm" enctype="multipart/form-data">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="plataform">Genero:</label>
+            <input type="text" id="genero" name="genero" required><br>
+
+            <label for="url">URL:</label>
+            <input type="text" id="url" name="url" required><br>
+            
+            <label for="integrantes">INTEGRANTES:</label>
+            <input type="text" id="integrantes" name="integrantes" required><br>
+            
+             <label for="squad">SQUAD:</label>
+            <input type="text" id="squad" name="squad" required><br>
+            
+            <label for="thumbnailpath">Thumbnail:</label>
+            <input type="text" id="thumbnailpath" name="thumbnailpath" required><br>
+         
+            <button type="button" onclick="cadastrarJogo()">✔Cadastrar</button>
+            
+        </form>
+         <div id="divimagem">
+			<center><h2>Lista de Jogos</h2><br>
+			
+            <button type="button" onclick="ListarJogos()">🔎Pesquisar</button>
+            <header>
+        
+    		</header>
+
+    		<aside>
+        		<!-- Barra lateral, se necessário -->
+   			 </aside>
+
+    		<main>
+        	<table class="blueTable" id="jogos-tabela">
+	            <thead>
+	                <tr>
+	                    <th>ID</th>
+	                    <th>Nome do Jogo</th>
+	                    <th>Genero</th>
+	                    <th>Squad</th>
+	                    <th>Integrantes</th>
+	                    <th>URL</th>
+	                    <th>Imagem</th>
+	                </tr>
+            	</thead>
+            	<tbody>
+                	<!-- A tabela de funcionários será carregada aqui -->
+            	</tbody>
+        	</table>
+        </div>
+    </div> 
+    <script src="main2.js"></script>
+</body>
+</html>
